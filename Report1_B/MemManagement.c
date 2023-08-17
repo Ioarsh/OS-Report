@@ -6,9 +6,9 @@ void call_stack(int depth){
     int stack_variable;
     printf("(Depth: %d)Address of stack_variable: %p\n",depth,&stack_variable);
     /// uncomment to make stack not overflow
-    // if(depth>5){
-    //     return NULL;
-    // }
+    if(depth>5){
+        return NULL;
+    }
     call_stack(depth+1);
     
 }
@@ -16,7 +16,7 @@ void call_stack(int depth){
 int main(){
 
     ///stack
-    printf("This is heap growth\n");
+    printf("This is stack growth\n");
     call_stack(0);
     printf("--------------------------------------------\n");
 
