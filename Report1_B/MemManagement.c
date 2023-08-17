@@ -13,7 +13,7 @@ int main(){
 
     ///stack
     printf("This is heap growth\n");
-    // call_stack(0);
+    call_stack(0);
     printf("--------------------------------------------\n");
 
     ///heap
