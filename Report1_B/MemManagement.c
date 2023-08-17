@@ -29,6 +29,9 @@ int main(){
     printf("Address of heap_variable_2: %p\n",heap_variable_2);
     printf("Address of heap_variable_3: %p\n",heap_variable_3);
     printf("--------------------------------------------\n");
+    free(heap_variable_1);
+    free(heap_variable_2);
+    free(heap_variable_3);
 
     ///data(global variable)
     printf("This is data address\n");
