@@ -5,6 +5,10 @@ int glo1,glo2,glo3;
 void call_stack(int depth){
     int stack_variable;
     printf("(Depth: %d)Address of stack_variable: %p\n",depth,&stack_variable);
+    /// uncomment to make stack not overflow
+    // if(depth>5){
+    //     return NULL;
+    // }
     call_stack(depth+1);
     
 }
